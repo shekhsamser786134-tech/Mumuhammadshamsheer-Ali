@@ -1,0 +1,8 @@
+{
+  "name": "SHAHEENA - Personal AI Companion",
+  "description": "Powerful, fast, multilingual personal AI assistant and Islamic learning companion by Shamsheer Aslam.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

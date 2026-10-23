@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0c16" />
+      <stop offset="50%" stop-color="#14112e" />
+      <stop offset="100%" stop-color="#07080f" />
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="tealGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#8b5cf6" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Outer ambient ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#purpleGlow)" stroke-width="4" stroke-opacity="0.3" stroke-dasharray="8 12" />
+  <circle cx="256" cy="256" r="160" fill="none" stroke="url(#tealGlow)" stroke-width="2" stroke-opacity="0.4" />
+
+  <!-- Central Emblem: Stylized Islamic Star & Falcon Wing Geometric Monogram -->
+  <g filter="url(#shadow)">
+    <!-- Crescent / Wing curves -->
+    <path d="M160 330 C130 250, 160 170, 256 120 C220 180, 230 250, 270 290 Z" fill="url(#purpleGlow)" opacity="0.85" />
+    <path d="M352 330 C382 250, 352 170, 256 120 C292 180, 282 250, 242 290 Z" fill="url(#tealGlow)" opacity="0.85" />
+    
+    <!-- Central Jewel / Star -->
+    <polygon points="256,150 272,210 332,226 272,242 256,302 240,242 180,226 240,210" fill="url(#goldGlow)" />
+    
+    <!-- Arabic Calligraphic Crown Accent (شاہینہ) -->
+    <circle cx="256" cy="226" r="14" fill="#ffffff" />
+    <circle cx="230" cy="190" r="6" fill="#2dd4bf" />
+    <circle cx="256" cy="180" r="7" fill="#fcd34d" />
+    <circle cx="282" cy="190" r="6" fill="#a855f7" />
+  </g>
+
+  <!-- Base emblem arcs -->
+  <path d="M180 340 Q256 385 332 340" fill="none" stroke="url(#goldGlow)" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+  <circle cx="256" cy="365" r="4" fill="#fcd34d" />
+</svg>
